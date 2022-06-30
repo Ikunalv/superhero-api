@@ -18,3 +18,5 @@ artifacts:
   files:
     - target/superhero-api-0.0.3-SNAPSHOT.jar
     - appspec.yml
+    - server_start.sh
+    - server_stop.sh
