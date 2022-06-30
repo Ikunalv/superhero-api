@@ -2,7 +2,7 @@ version: 0.0
 os: linux
 
 files:
-  - source: ./superhero-api-0.0.3-SNAPSHOT.jar
+  - source: target/superhero-api-0.0.3-SNAPSHOT.jar
     destination: /tmp
 
 permissions:
