@@ -16,5 +16,5 @@ phases:
       - echo Build completed on `date`
 artifacts:
   files:
-    - target/superhero-api-0.0.2-SNAPSHOT.jar
+    - target/superhero-api-0.0.3-SNAPSHOT.jar
     - appspec.yml
