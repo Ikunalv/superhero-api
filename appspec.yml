@@ -4,7 +4,10 @@ os: linux
 files:
   - source: target/superhero-api-0.0.3-SNAPSHOT.jar
     destination: /tmp
-
+  - source: server_start.sh
+    destination: /tmp
+  - source: server_stop.sh
+    destination: /tmp
 permissions:
   - object: /
     pattern: "**"
@@ -13,5 +16,9 @@ permissions:
 hooks:
   ApplicationStart:
     - location: server_start.sh
+      timeout: 20
+      runas: ec2-user
+  ApplicationStop:
+    - location: server_stop.sh
       timeout: 20
       runas: ec2-user
