@@ -17,5 +17,5 @@ phases:
 artifacts:
   files:
     - target/superhero-api-0.0.3-SNAPSHOT.jar
-    - server_start.sh
-    - server_stop.sh
+    - scripts/*
+    - appspec.yml
