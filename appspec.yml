@@ -2,12 +2,9 @@ version: 0.0
 os: linux
 
 files:
-  - source: target/superhero-api-0.0.3-SNAPSHOT.jar
+  - source: /
     destination: /home/ec2-user/server
-  - source: server_start.sh
-    destination: /tmp
-  - source: server_stop.sh
-    destination: /tmp
+
 permissions:
   - object: /
     pattern: "**"
